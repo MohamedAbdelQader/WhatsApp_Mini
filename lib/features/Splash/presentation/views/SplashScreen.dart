@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:mini_whatsapp/core/constants/asset%20images/asset_images.dart';
+import 'package:mini_whatsapp/core/constants/asset_images/asset_images.dart';
 import 'package:mini_whatsapp/core/themes/colors/color_app.dart';
-import 'dart:async';
 import 'package:mini_whatsapp/features/home/presentation/HomeScreen.dart';
 
 class SplashScreen extends StatefulWidget {
@@ -24,6 +23,7 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Color(0xFF4CB050),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -45,7 +45,7 @@ class _SplashScreenState extends State<SplashScreen> {
                       textStyle: TextStyle(
                         fontSize: 40,
                         fontWeight: FontWeight.bold,
-                        color: ColorApp.secondaryColor,
+                        color: ColorApp.primaryColor,
                       ),
                     ),
                     )
@@ -70,7 +70,7 @@ class _SplashScreenState extends State<SplashScreen> {
                     margin: EdgeInsets.fromLTRB(5, 0, 5, 20),
                     child: ElevatedButton(
                       style: ElevatedButton.styleFrom(
-                        backgroundColor: ColorApp.secondaryColor,
+                        backgroundColor: ColorApp.primaryColor,
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(25)
                         )

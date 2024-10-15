@@ -2,7 +2,7 @@ import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:mini_whatsapp/core/themes/colors/color_app.dart';
 
-abstract  class Style {
+abstract  class Styles {
   static TextStyle textStyle24= TextStyle(
     color: Colors.black,
     fontSize: 24,
