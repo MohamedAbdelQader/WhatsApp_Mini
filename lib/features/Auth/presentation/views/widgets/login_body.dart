@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:mini_whatsapp/features/Auth/presentation/views/signup_view.dart';
+import 'package:mini_whatsapp/core/shared_widgets/cutom_sinup_or_login.dart';
 import 'package:mini_whatsapp/features/Auth/presentation/views/widgets/email_field.dart';
 import 'package:mini_whatsapp/features/Auth/presentation/views/widgets/login_button.dart';
 import 'package:mini_whatsapp/features/Auth/presentation/views/widgets/login_title.dart';
@@ -27,7 +29,11 @@ class LoginBody extends StatelessWidget {
               SizedBox(height: 20,),
               PasswordField(passwordController: passwordController,),
               SizedBox(height: 20,),
-              LoginButton(formKey:_formKey)
+              LoginButton(formKey:_formKey),
+              SizedBox(height: 20,),
+              CutomSinupOrLogin(question: "Don't have an account?  ",solution: "Register here",navigatTo: SignupView(),)
+
+
 
 
             ],

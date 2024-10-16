@@ -21,7 +21,7 @@ class _PasswordFieldState extends State<PasswordField> {
       label: "Enter Your Password",
       hint: "Your Password",
       prefix: Icons.lock,
-      suffix: isPasswordVisibility?Icons.visibility_off:Icons.visibility,
+      suffix: isPasswordVisibility?Icons.visibility:Icons.visibility_off,
       pressed: toggleVisibility,
       isObscure:isPasswordVisibility,
       validate: (value){
